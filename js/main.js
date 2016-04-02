@@ -3,7 +3,7 @@ var $star;
 var width = $body.outerWidth();
 var height = $body.outerHeight();
 
-  for (i = 0; i < 75; i++) {
+for (i = 0; i < 75; i++) {
   $star = $('<div>');
   $star.addClass('star');
   $star.css({
@@ -11,6 +11,6 @@ var height = $body.outerHeight();
     left: Math.random() * width,
     opacity: Math.random(),
     transform: 'rotate(' + Math.random() * 360 + 'deg) scale(' + Math.random() + ')'
-});
-$body.append($star);
+  });
+  $body.append($star);
 }
