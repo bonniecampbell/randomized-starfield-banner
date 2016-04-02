@@ -1,10 +1,9 @@
 var $body = $('.banner');
 var $star;
-var width = $body.outWidth();
-var height = $body.outHeight();
+var width = $body.outerWidth();
+var height = $body.outerHeight();
 
-$('.html').on('click', function (e) {
-  for (i = 0; 1 < 75; i++)
+  for (i = 0; i < 75; i++) {
   $star = $('<div>');
   $star.addClass('star');
   $star.css({
@@ -12,6 +11,6 @@ $('.html').on('click', function (e) {
     left: Math.random() * width,
     opacity: Math.random(),
     transform: 'rotate(' + Math.random() * 360 + 'deg) scale(' + Math.random() + ')'
-
-  )
 });
+$body.append($star);
+}
